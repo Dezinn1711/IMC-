@@ -1,0 +1,85 @@
+/* 11. imcTable.css - Estilização da tabela de resultados */
+
+#result-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Tabela de classificações */
+.imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+    max-width: 60px;
+    text-align: center;
+}
+
+/* Botão de voltar centralizado */
+#back-btn {
+    align-self: center;
+    flex: 0 !important;
+}
+
+/* Classes de cores para cada classificação */
+.good {
+    color: #12db34;
+    font-weight: bold;
+}
+
+.low {
+    color: #dbce12;
+    font-weight: bold;
+}
+
+.medium {
+    color: #db6116;
+    font-weight: bold;
+}
+
+.high {
+    color: #db1912;
+    font-weight: bold;
+}
